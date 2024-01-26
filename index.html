@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+
+    <title>Pokedex</title>
+
+    <link rel="shortcut icon" href="/img/pokemon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" >
+</head>
+
+<body>
+    <header class="header-bg" aria-label="Cabeçalho">
+        <div class="header container logo">
+            <a href="" class=""> </a>
+            <label for="search">
+                <input type="text" placeholder="" id="search" name="search">
+            </label>
+
+            <nav aria-label="Primária">
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">        
+        <h1 class="titulo">Lista de Pokemons</h1>
+        <ol id="pokemonList" class="pokemons">
+        </ol>
+
+        <div class="pagination">
+            <button id="loadMoreButton" type="button">
+                Load More
+            </button>
+        </div>
+    </main>
+
+    <footer class="footer container" aria-label="Rodapé">
+    </footer>
+
+    <script src="js/pokemon-model.js"></script>
+    <script src="js/poke-api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
